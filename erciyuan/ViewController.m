@@ -12,10 +12,10 @@
 
 @interface ViewController () < UITextFieldDelegate >
 
-@property (strong, nonatomic) UITextField *accountTextField;
-@property (strong, nonatomic) UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *accountTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 
-@property (strong, nonatomic) UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self initCustomView];
+    //[self initCustomView];
 }
 
 - (void)initCustomView {
@@ -55,7 +55,7 @@
     
 }
 
-- (void)loginButtonAction:(id)sender {
+- (IBAction)loginButtonAction:(id)sender {
     
     NSString *passwordMd5String = [MD5Utils md5String:_passwordTextField.text];
     
