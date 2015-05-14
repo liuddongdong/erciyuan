@@ -10,7 +10,7 @@
 		0F616BC51AFC9C2300F4F22F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BC41AFC9C2300F4F22F /* main.m */; };
 		0F616BC81AFC9C2300F4F22F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BC71AFC9C2300F4F22F /* AppDelegate.m */; };
 		0F616BCB1AFC9C2300F4F22F /* erciyuan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BC91AFC9C2300F4F22F /* erciyuan.xcdatamodeld */; };
-		0F616BCE1AFC9C2300F4F22F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BCD1AFC9C2300F4F22F /* ViewController.m */; };
+		0F616BCE1AFC9C2300F4F22F /* NeteaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BCD1AFC9C2300F4F22F /* NeteaseLoginViewController.m */; };
 		0F616BD31AFC9C2300F4F22F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F616BD21AFC9C2300F4F22F /* Images.xcassets */; };
 		0F616BD61AFC9C2300F4F22F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F616BD41AFC9C2300F4F22F /* LaunchScreen.xib */; };
 		0F616BE21AFC9C2300F4F22F /* erciyuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616BE11AFC9C2300F4F22F /* erciyuanTests.m */; };
@@ -32,7 +32,9 @@
 		0F616C2A1AFCB2A900F4F22F /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616C201AFCB2A900F4F22F /* UIProgressView+AFNetworking.m */; };
 		0F616C2B1AFCB2A900F4F22F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616C221AFCB2A900F4F22F /* UIRefreshControl+AFNetworking.m */; };
 		0F616C2C1AFCB2A900F4F22F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F616C241AFCB2A900F4F22F /* UIWebView+AFNetworking.m */; };
-		0FCEC4291B01F38D00D21982 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEC4281B01F38D00D21982 /* ViewController.xib */; };
+		0FB502691B04473300347F2D /* WizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB502671B04473300347F2D /* WizardViewController.m */; };
+		0FB5026A1B04473300347F2D /* WizardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB502681B04473300347F2D /* WizardViewController.xib */; };
+		0FCEC4291B01F38D00D21982 /* NeteaseLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEC4281B01F38D00D21982 /* NeteaseLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,8 @@
 		0F616BC61AFC9C2300F4F22F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F616BC71AFC9C2300F4F22F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0F616BCA1AFC9C2300F4F22F /* erciyuan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = erciyuan.xcdatamodel; sourceTree = "<group>"; };
-		0F616BCC1AFC9C2300F4F22F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F616BCD1AFC9C2300F4F22F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0F616BCC1AFC9C2300F4F22F /* NeteaseLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeteaseLoginViewController.h; sourceTree = "<group>"; };
+		0F616BCD1AFC9C2300F4F22F /* NeteaseLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeteaseLoginViewController.m; sourceTree = "<group>"; };
 		0F616BD21AFC9C2300F4F22F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F616BD51AFC9C2300F4F22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F616BDB1AFC9C2300F4F22F /* erciyuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = erciyuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +99,10 @@
 		0F616C221AFCB2A900F4F22F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		0F616C231AFCB2A900F4F22F /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		0F616C241AFCB2A900F4F22F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		0FCEC4281B01F38D00D21982 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0FB502661B04473300347F2D /* WizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardViewController.h; sourceTree = "<group>"; };
+		0FB502671B04473300347F2D /* WizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardViewController.m; sourceTree = "<group>"; };
+		0FB502681B04473300347F2D /* WizardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardViewController.xib; sourceTree = "<group>"; };
+		0FCEC4281B01F38D00D21982 /* NeteaseLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NeteaseLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +146,6 @@
 			children = (
 				0F616BC61AFC9C2300F4F22F /* AppDelegate.h */,
 				0F616BC71AFC9C2300F4F22F /* AppDelegate.m */,
-				0F616BCC1AFC9C2300F4F22F /* ViewController.h */,
-				0F616BCD1AFC9C2300F4F22F /* ViewController.m */,
-				0FCEC4281B01F38D00D21982 /* ViewController.xib */,
 				0F616BD21AFC9C2300F4F22F /* Images.xcassets */,
 				0F616BD41AFC9C2300F4F22F /* LaunchScreen.xib */,
 				0F616BEB1AFC9D2100F4F22F /* View */,
@@ -195,6 +197,12 @@
 		0F616BEC1AFC9D2700F4F22F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0FB502661B04473300347F2D /* WizardViewController.h */,
+				0FB502671B04473300347F2D /* WizardViewController.m */,
+				0FB502681B04473300347F2D /* WizardViewController.xib */,
+				0F616BCC1AFC9C2300F4F22F /* NeteaseLoginViewController.h */,
+				0F616BCD1AFC9C2300F4F22F /* NeteaseLoginViewController.m */,
+				0FCEC4281B01F38D00D21982 /* NeteaseLoginViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -369,7 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F616BD61AFC9C2300F4F22F /* LaunchScreen.xib in Resources */,
-				0FCEC4291B01F38D00D21982 /* ViewController.xib in Resources */,
+				0FB5026A1B04473300347F2D /* WizardViewController.xib in Resources */,
+				0FCEC4291B01F38D00D21982 /* NeteaseLoginViewController.xib in Resources */,
 				0F616BD31AFC9C2300F4F22F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +399,7 @@
 			files = (
 				0F616C0F1AFCB04C00F4F22F /* AFURLConnectionOperation.m in Sources */,
 				0F616C0A1AFCB04C00F4F22F /* AFHTTPRequestOperation.m in Sources */,
+				0FB502691B04473300347F2D /* WizardViewController.m in Sources */,
 				0F616C281AFCB2A900F4F22F /* UIButton+AFNetworking.m in Sources */,
 				0F616C0D1AFCB04C00F4F22F /* AFNetworkReachabilityManager.m in Sources */,
 				0F616C2A1AFCB2A900F4F22F /* UIProgressView+AFNetworking.m in Sources */,
@@ -405,7 +415,7 @@
 				0F616C0B1AFCB04C00F4F22F /* AFHTTPRequestOperationManager.m in Sources */,
 				0F616C0E1AFCB04C00F4F22F /* AFSecurityPolicy.m in Sources */,
 				0F616C2C1AFCB2A900F4F22F /* UIWebView+AFNetworking.m in Sources */,
-				0F616BCE1AFC9C2300F4F22F /* ViewController.m in Sources */,
+				0F616BCE1AFC9C2300F4F22F /* NeteaseLoginViewController.m in Sources */,
 				0F616BC51AFC9C2300F4F22F /* main.m in Sources */,
 				0F616C0C1AFCB04C00F4F22F /* AFHTTPSessionManager.m in Sources */,
 				0F616C261AFCB2A900F4F22F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -479,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -516,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

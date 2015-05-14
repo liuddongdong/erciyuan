@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NeteaseLoginViewController.h
 //  erciyuan
 //
 //  Created by liudongdong on 15/5/8.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface NeteaseLoginViewController : UIViewController
 
 
 @end
