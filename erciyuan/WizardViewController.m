@@ -7,6 +7,7 @@
 //
 
 #import "WizardViewController.h"
+#import "NeteaseLoginViewController.h"
 
 @interface WizardViewController () < UIScrollViewDelegate >
 
@@ -40,6 +41,27 @@
     
     _pageControl.currentPage = pageNumber;
     
+}
+
+#pragma mark - LoginButton Action
+
+- (IBAction)loginButtonAction:(id)sender {
+    
+    [UIView animateWithDuration:1.0f
+                     animations:^(void){
+                         
+                         self.view.alpha = 0.0;
+                         
+                     }
+                     completion:^(BOOL finished){
+                         
+                         NeteaseLoginViewController *vc = [[NeteaseLoginViewController alloc] init];
+                         [self presentViewController:vc animated:NO completion:nil];
+                         
+                         [self.view removeFromSuperview];
+                         
+                     }
+     ];
 }
 
 - (void)didReceiveMemoryWarning {
