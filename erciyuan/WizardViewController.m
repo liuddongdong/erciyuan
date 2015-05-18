@@ -7,7 +7,7 @@
 //
 
 #import "WizardViewController.h"
-#import "NeteaseLoginViewController.h"
+#import "LoginViewController.h"
 
 @interface WizardViewController () < UIScrollViewDelegate >
 
@@ -56,8 +56,8 @@
                      }
                      completion:^(BOOL finished){
                          
-                         NeteaseLoginViewController *vc = [[NeteaseLoginViewController alloc] init];
-                         [self presentViewController:vc animated:NO completion:nil];
+                         LoginViewController *loginVC = [[LoginViewController alloc] init];
+                         [[UIApplication sharedApplication] keyWindow].rootViewController = loginVC;
                          
                          [self.view removeFromSuperview];
                          

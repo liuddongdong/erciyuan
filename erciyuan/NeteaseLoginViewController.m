@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *accountTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 
@@ -52,6 +53,12 @@
     [_loginButton setTitle:@"登  录" forState:UIControlStateNormal];
     [_loginButton addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_loginButton];
+    
+}
+
+- (IBAction)backButtonAction:(id)sender {
+    
+    [self dismissViewControllerAnimated:NO completion:nil];
     
 }
 
