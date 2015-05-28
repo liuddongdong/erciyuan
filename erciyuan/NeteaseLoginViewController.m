@@ -8,7 +8,6 @@
 
 #import "NeteaseLoginViewController.h"
 #import "MD5Utils.h"
-#import "AFNetworking/AFNetworking.h"
 
 @interface NeteaseLoginViewController () < UITextFieldDelegate >
 
@@ -64,30 +63,30 @@
 
 - (IBAction)loginButtonAction:(id)sender {
     
-    NSString *passwordMd5String = [MD5Utils md5String:_passwordTextField.text];
-    
-    NSMutableDictionary *parameterDic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:_accountTextField.text, @"username", passwordMd5String, @"password", nil];
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    
-    [manager POST:@"http://223.252.220.52/login/netease"
-       parameters:parameterDic
-          success:^(AFHTTPRequestOperation *operation,  id responseObject) {
-              
-              //NSDictionary *responseDic = (NSDictionary *)responseObject;
-              
-              UIAlertView *successAlertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"登录成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
-              [successAlertView show];
-              
-          }
-          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-              
-              UIAlertView *failureAlertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"登录失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
-              [failureAlertView show];
-
-          }
-     ];
+//    NSString *passwordMd5String = [MD5Utils md5String:_passwordTextField.text];
+//    
+//    NSMutableDictionary *parameterDic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:_accountTextField.text, @"username", passwordMd5String, @"password", nil];
+//    
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    
+//    [manager POST:@"http://223.252.220.52/login/netease"
+//       parameters:parameterDic
+//          success:^(AFHTTPRequestOperation *operation,  id responseObject) {
+//              
+//              //NSDictionary *responseDic = (NSDictionary *)responseObject;
+//              
+//              UIAlertView *successAlertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"登录成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//              [successAlertView show];
+//              
+//          }
+//          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//              
+//              UIAlertView *failureAlertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"登录失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//              [failureAlertView show];
+//
+//          }
+//     ];
     
 }
 
